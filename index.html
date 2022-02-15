@@ -17,11 +17,14 @@
     <nav id="navbar" class="navbar">
         <div class="nav-nav">
             <div class="nav-logo">
-                <a href="#header"><img id="logo" alt="logo" src="static/img/logo_dark.png"></a>
+                <a href="#header">
+                    <img id="logo" alt="logo" src="static/img/logo_dark.png">
+                    <div id="mobile-head">YaAlex</div>
+                </a>
             </div>
             <ul id="pc-nav">
                 <li>
-                    <a href="#about-me">О мне</a>
+                    <a href="#about-me">Обо мне</a>
                 </li>
                 <li>
                     <a href="#skills">Навыки</a>
@@ -53,7 +56,7 @@
                         <a href="#header">Главная</a>
                     </li>
                     <li>
-                        <a href="#about-me">О мне</a>
+                        <a href="#about-me">Обо мне</a>
                     </li>
                     <li>
                         <a href="#skills">Навыки</a>
@@ -142,6 +145,13 @@
             </h1>
             <div class="pre-skill-container">
                 <div id="skill-container">
+                    <div id="click-me">
+                        <svg class="click-me-svg" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                             viewBox="0 0 100 80" preserveAspectRatio="none">
+                            <path d="M 90.837 8.81 C 25 5 7 59 10 75 C 15.175 76.773 21.812 66.419 26.59 59.251 C 4.024 95.622 5 60 5 50"></path>
+                        </svg>
+                        <span>click me!</span>
+                    </div>
                     <div class="skill-item">
                         <a class="skill-title" onclick="openSkill('skill-python')">Python</a>
                         <ul style="height: 0" id="skill-python">
@@ -245,7 +255,7 @@
                 <div class="project-text-container">
                     <h2 class="project-name"><a href="">Online Game</a></h2>
                     <p class="project-text">
-                        Клиент-серверная игра на <span class="code">pygame, socket </span>. Игра не закончена, и
+                        Клиент-серверная игра на <code class="code">pygame, socket </code>. Игра не закончена, и
                         наверное
                         останется в таком виде.
                     </p>
@@ -257,20 +267,24 @@
                     <h2 class="project-name"><a href="https://github.com/amatskepaldze/SQLProject">TalenTinder</a>
                     </h2>
                     <p class="project-text">
-                        Бэкенд школьного проекта - Социальной сеть для музыкантов. Маленький проект на <span
-                            class="code">flask</span>
+                        Бэкенд школьного проекта - Социальной сеть для музыкантов. Маленький проект на
+                        <code>flask</code>
                     </p>
                 </div>
                 <img src="static/img/Talent_Tinder.png" alt="Talent_Tinder">
             </div>
         </div>
     </section>
+    <svg class="back-line" xmlns="http://www.w3.org/2000/svg" version="1.1"
+         viewBox="0 0 100 80" preserveAspectRatio="none">
+        <path d="M 0 0 C 60 93 89 94 100 0 Z"></path>
+    </svg>
 </main>
 <footer>
     <ul>
-        <li><a></a></li>
-        <li><a></a></li>
-        <li><a></a></li>
+        <li><a href="mailto:sashayanochkin@gmail.com">sashayanochkin@gmail.com</a></li>
+        <li><a>+7 966 337 98 33</a></li>
+        <li><a>&copy;А. К. Яночкин, 2022</a></li>
     </ul>
 </footer>
 </body>

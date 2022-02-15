@@ -27,16 +27,6 @@ function changeNav(pos) {
     }
 }
 
-function openSkill(id) {
-    el = document.getElementById(id);
-    if (el.style.height == '0px') {
-        el.style.height = el.scrollHeight + 'px';
-    } else {
-        el.style.height = '0px';
-
-    }
-}
-
 function setTheme(dark) {
     theme = dark;
     el = document.body;
@@ -50,12 +40,12 @@ function setTheme(dark) {
 }
 
 function openSkill(id) {
+    document.getElementById('click-me').classList.add('hide-op');
     el = document.getElementById(id);
     if (el.style.height == '0px') {
         el.style.height = el.scrollHeight + 'px';
     } else {
         el.style.height = '0px';
-
     }
 }
 
