@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Страница о мне">
+    <title>YaAlex</title>
+    <link rel="icon" href="static/img/logo_dark.png">
+    <link rel="shortcut icon" href="static/img/logo_dark.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <script src="static/script.js"></script>
+</head>
+<body>
+<header id="header">
+    <nav id="navbar" class="navbar">
+        <div class="nav-nav">
+            <div class="nav-logo">
+                <a href="#header"><img id="logo" alt="logo" src="static/img/logo_dark.png"></a>
+            </div>
+            <ul id="pc-nav">
+                <li>
+                    <a href="#about-me">О мне</a>
+                </li>
+                <li>
+                    <a href="#skills">Навыки</a>
+                </li>
+                <li>
+                    <a href="#projects">Проекты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-login">
+            <button id="switch-theme">
+                <svg version="1.1" id="switch-theme-svg" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 485.213 485.212" xml:space="preserve">
+                    <g>
+                        <path d="M 242.606 60.651 c -66.989 0 -121.302 54.315 -121.302 121.304 c 0 60.651 60.651 122.25 60.651 181.951 h 121.3 c 0 -61.596 60.653 -121.3 60.653 -181.951 C 363.908 114.966 309.598 60.651 242.606 60.651 z M 306.662 258.625 c -12.083 24.021 -24.433 48.664 -30.266 74.959 h -67.729 c -5.834 -25.497 -17.917 -49.752 -29.734 -73.446 c -14.039 -28.222 -27.305 -54.875 -27.305 -78.183 c 0 -50.167 40.812 -90.978 90.978 -90.978 c 50.166 0 90.979 40.811 90.979 90.978 C 333.586 204.997 320.49 231.058 306.662 258.625 z M 303.255 439.727 c 0 8.378 -6.776 15.159 -15.158 15.159 h -2.786 c -6.245 17.65 -22.925 30.326 -42.704 30.326 c -19.784 0 -36.457 -12.676 -42.706 -30.326 h -2.784 c -8.38 0 -15.161 -6.781 -15.161 -15.159 c 0 -8.382 6.781 -15.168 15.161 -15.168 h 90.98 C 296.479 424.559 303.255 431.345 303.255 439.727 z M 303.255 394.237 c 0 8.383 -6.776 15.159 -15.158 15.159 h -90.98 c -8.38 0 -15.161 -6.776 -15.161 -15.159 c 0 -8.382 6.781 -15.163 15.161 -15.163 h 90.98 C 296.479 379.074 303.255 385.855 303.255 394.237"/>
+                    </g>
+                    <g id="switch-theme-light">
+                        <path d="M 226.705 32.281 M 92.606 77.831 l 27.305 15.781 c -5.922 8.205 -11.045 16.911 -15.25 26.21 l -27.219 -15.698 L 92.606 77.831 z M 242.606 30.327 c -5.211 0 -10.098 1.008 -15.164 1.54 V 0 h 30.327 v 31.867 C 252.706 31.334 247.819 30.327 242.606 30.327 z M 154.263 59.26 l -15.782 -27.305 l 26.297 -15.166 l 15.697 27.216 C 171.174 48.213 162.47 53.337 154.263 59.26 z M 380.584 119.822 c -4.21 -9.299 -9.357 -18.005 -15.28 -26.206 l 27.303 -15.786 l 15.163 26.299 L 380.584 119.822 z M 330.945 59.232 c -8.173 -5.895 -16.909 -11.019 -26.174 -15.226 l 15.695 -27.216 l 26.238 15.166 L 330.945 59.232 z M 92.576 197.119 H 60.651 v -30.324 h 31.867 c -0.532 5.063 -1.54 9.948 -1.54 15.161 C 90.978 187.108 91.986 192.085 92.576 197.119 z M 424.562 166.794 v 30.324 h -31.923 c 0.588 -5.034 1.597 -10.011 1.597 -15.164 c 0 -5.213 -1.009 -10.097 -1.54 -15.161 H 424.562 z M 380.229 243.911 l 27.54 15.873 l -15.163 26.271 l -24.819 -14.332 C 372.258 262.565 376.406 253.329 380.229 243.911 z M 104.867 243.967 c 3.762 9.422 7.909 18.719 12.349 27.9 l -24.609 14.188 l -15.164 -26.271 L 104.867 243.967 z"/>
+                    </g>
+                </svg>
+            </button>
+            <div id="b_container">
+                <input id="b_menu_button" type="checkbox">
+                <label id="b_menu_button_label" class="b_menu_label" for="b_menu_button">
+                    <span></span>
+                </label>
+                <ul class="b_menu" id="b_menu">
+                    <li>
+                        <a href="#header">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#about-me">О мне</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Навыки</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Проекты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="cover">
+        <div class="label">
+            <div class="label-container">
+                <div>YaAlex</div>
+                <div>Александр</div>
+                <div>Яночкин</div>
+            </div>
+        </div>
+        <div class="social">
+            <ul class="social-icons">
+                <li><a class="social-icon-github" href="https://github.com/Ya4alex" title="..." target="_blank"
+                       rel="noopener"></a></li>
+                <li><a class="social-icon-vk" href="https://vk.com/ya4lex" title="..." target="_blank"
+                       rel="noopener"></a></li>
+                <li><a class="social-icon-telegram" href="https://telegram.me/ya4lex" title="..." target="_blank"
+                       rel="noopener"></a></li>
+                <li><a class="social-icon-youtube" href="https://www.youtube.com/watch?v=4oc7YqhCldk"
+                       title="..." target="_blank" rel="noopener"></a></li>
+
+                <li><a class="social-icon-fb shake" title="..." target="_blank"
+                       rel="noopener"></a></li>
+                <li><a class="social-icon-twitter shake" title="..." target="_blank"
+                       rel="noopener"></a></li>
+                <li><a class="social-icon-tiktok shake" title="..." target="_blank"
+                       rel="noopener"></a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main>
+    <section id="about-me">
+        <div class="cmd-c">
+            <svg class="cmd" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <title>L1</title>
+                    <path id="svg_7"
+                          d="m43.75213,59.29205l-43.75213,-59.29205l28.81423,0l43.75213,59.29205l-43.75213,59.292l-28.81423,0l43.75213,-59.292z"
+                          fill="#fff"/>
+                </g>
+                <g id="cmd-l2">
+                    <title>L2</title>
+                    <rect id="svg_9" height="27.43363" width="79.64602" y="91.93227" x="76.44871"
+                          fill="#fff"/>
+                </g>
+            </svg>
+        </div>
+        <div class="flex-block">
+            <div class="text-container">
+                <h1 class="about-me-h1">
+                    О мне
+                </h1>
+                <p>
+                    Привет, я из <a href="https://yandex.ru/maps/-/CCUiUJDShA">Москвы</a>, мне 17. Я ленивый слоупок,
+                    которому нравится все упорядоченное (по моему коду и не скажешь).
+                <p>
+                    Я учусь в инфо-техническом классе <a href="https://lyc1535.mskobr.ru/">1535</a>, сел за клавиатуру в
+                    14 лет. В 9 - 10 классе закончил <a href="">Яндекс Лицей</a>, нельзя сказать, что хорошо, но как я
+                    сказал - я ленивый. Однако, стоит найти мне интересное дело, то меня не оторвать.
+                </p>
+                <p>Если интересно "что это за?", загляни в мои соц-сети (правда там пусто).</p>
+            </div>
+            <div class="self-img">
+                <img alt="avatar" src="static/img/avatar.png">
+            </div>
+        </div>
+    </section>
+    <svg class="back-line" xmlns="http://www.w3.org/2000/svg" version="1.1"
+         viewBox="0 0 100 80" preserveAspectRatio="none">
+        <path d="M 0 0 C 11 93 40 94 100 0 Z"></path>
+    </svg>
+    <section id="skills">
+        <div class="text-container">
+            <h1>
+                My Skills
+            </h1>
+            <div class="pre-skill-container">
+                <div id="skill-container">
+                    <div class="skill-item">
+                        <a class="skill-title" onclick="openSkill('skill-python')">Python</a>
+                        <ul style="height: 0" id="skill-python">
+                            <li><a>DJANGO</a></li>
+                            <li><a>FLASK</a></li>
+                            <li><a>SQLALCHEMY</a></li>
+                            <li><a>NUMPY</a></li>
+                            <li><a>PyQT5</a></li>
+                        </ul>
+                    </div>
+                    <div class="skill-item">
+                        <a class="skill-title" onclick="openSkill('skill-web')">Web</a>
+                        <ul style="height: 0" id="skill-web">
+                            <li><a>HTTP / HTTPS</a></li>
+                            <li><a>APACHE</a></li>
+                            <li><a>HTML</a></li>
+                            <li><a>CSS</a></li>
+                            <li><a>JQ</a></li>
+                            <li><a>BOOTSTRAP</a></li>
+                        </ul>
+                    </div>
+                    <div class="skill-item">
+                        <a class="skill-title" onclick="openSkill('skill-beginner')">Beginner's skills</a>
+                        <ul style="height: 0" id="skill-beginner">
+                            <li><a>C++ / C</a></li>
+                            <li><a>GOLANG</a></li>
+                            <li><a>PY NATASHA</a></li>
+                            <li><a>Discord API</a></li>
+                            <li><a>Telegram API</a></li>
+                        </ul>
+                    </div>
+                    <div class="skill-item">
+                        <a class="skill-title" onclick="openSkill('skill-other')">Other</a>
+                        <ul style="height: 0" id="skill-other">
+                            <li><a>SQL</a></li>
+                            <li><a>MYSQL server</a></li>
+                            <li><a>GIT</a></li>
+                            <li><a>CMD (linux, windows)</a></li>
+                            <li><a>PyGame</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <svg class="back-line" xmlns="http://www.w3.org/2000/svg" version="1.1"
+         viewBox="0 20 100 80" preserveAspectRatio="none">
+        <path d="M 0 100 C 11 0 40 0 100 100 Z"></path>
+    </svg>
+    <section id="projects">
+        <h1>
+            Небольшие Проекты
+        </h1>
+        <div class="project-container" id="project-container">
+            <div class="project-slide" id="0project" onclick="slideProject(0)">
+                <div class="project-text-container">
+                    <h2 class="project-name"><a href="http://yougc.ru">YouGC</a></h2>
+                    <p class="project-text">
+                        Бекэнд на <code>django</code> для сайта небольшого майнкрафт-проекта. Донат, магазин, система
+                        авторизации и восстановления паролей, мониторинг активности игроков, автоматизация некоторых
+                        процессов, взаимодействие с базами данных, немного простенького фронтенда и js. Сейчас планируем
+                        переделать весь внешний вид сайта.
+                    </p>
+                </div>
+                <img src="static/img/yougc.png" alt="YouGC">
+            </div>
+            <div class="project-slide" id="1project" onclick="slideProject(1)">
+                <div class="project-text-container">
+                    <h2 class="project-name"><a href="https://github.com/Ya4alex/PhotoRus">PhotoRus</a></h2>
+                    <p class="project-text">
+                        Школьный проект с другом сайта и API для синтаксического анализа предложения и морфологического
+                        анализа слова. Библиотеки: <code>flask, Natasha, pymorphy, nltk</code> и другие для проверки
+                        грамматики. Хотя проект не был доведен до финиша, потому что программа часто ошибалась, но она
+                        отлично справлялась с простыми предложениями с причастиями и деепричастиями.
+                    </p>
+                </div>
+                <img src="static/img/photorus.png" alt="PhotoRus">
+            </div>
+            <div class="project-slide" id="2project" onclick="slideProject(2)">
+                <div class="project-text-container">
+                    <h2 class="project-name"><a href="">Ship-x</a></h2>
+                    <p class="project-text">
+                        Простая игра на <code>pygame</code> про космос, астероиды и корабли. Писал как
+                        проект для <a href="">Яндекс лицея</a>, потом добавил в игру боссов, бонусы и эффекты, подсчет
+                        очков и свою музыку. Уворачивайся от астероидов или уничтожай их.
+                    </p>
+                </div>
+                <img src="static/img/ShipX.png" alt="Ship-x">
+            </div>
+            <div class="project-slide" id="3project" onclick="slideProject(3)">
+                <div class="project-text-container">
+                    <h2 class="project-name"><a href="">PyQt Player</a></h2>
+                    <p class="project-text">
+                        Небольшой милый плейер, с удобным интерфейсом. Написан на <code>PyQt5</code> с использованием
+                        <code>Qt Designer</code>.
+                    </p>
+                </div>
+                <img src="static/img/Player.png" alt="PyQt Player">
+            </div>
+            <div class="project-slide" id="4project" onclick="slideProject(4)">
+                <div class="project-text-container">
+                    <h2 class="project-name"><a href="">Online Game</a></h2>
+                    <p class="project-text">
+                        Клиент-серверная игра на <span class="code">pygame, socket </span>. Игра не закончена, и
+                        наверное
+                        останется в таком виде.
+                    </p>
+                </div>
+                <img src="static/img/tank.png" alt="Online Game">
+            </div>
+            <div class="project-slide project-slide-last" id="5project" onclick="slideProject(5)">
+                <div class="project-text-container">
+                    <h2 class="project-name"><a href="https://github.com/amatskepaldze/SQLProject">TalenTinder</a>
+                    </h2>
+                    <p class="project-text">
+                        Бэкенд школьного проекта - Социальной сеть для музыкантов. Маленький проект на <span
+                            class="code">flask</span>
+                    </p>
+                </div>
+                <img src="static/img/Talent_Tinder.png" alt="Talent_Tinder">
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <ul>
+        <li><a></a></li>
+        <li><a></a></li>
+        <li><a></a></li>
+    </ul>
+</footer>
+</body>
+</html>
