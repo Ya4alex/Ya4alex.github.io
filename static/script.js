@@ -1,15 +1,15 @@
 function setThemeCookie(thm) {
-    var exdate = new Date();
-    exdate.setDate(exdate.getDate() + 365);
-    var c_value = (+ thm) + "; expires=" + exdate.toUTCString();
+    var exd = new Date();
+    exd.setDate(exd.getDate() + 365);
+    var c_value = (+thm) + "; expires=" + exd.toUTCString();
     document.cookie = 'theme' + "=" + c_value;
 }
 
 function getTheme() {
-    var i, x, y, ARRcookies = document.cookie.split(";");
-    for (i = 0; i < ARRcookies.length; i++) {
-        x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
-        y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+    var i, x, y, arr_c = document.cookie.split(";");
+    for (i = 0; i < arr_c.length; i++) {
+        x = arr_c[i].substr(0, arr_c[i].indexOf("="));
+        y = arr_c[i].substr(arr_c[i].indexOf("=") + 1);
         x = x.replace(/^\s+|\s+$/g, "");
         if (x == 'theme') {
             return !!Number(y);
@@ -17,38 +17,6 @@ function getTheme() {
     }
     return (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
 }
-
-function changeNav(pos) {
-    if (pos > 0) {
-        document.getElementById('navbar').classList.add("nav-painted");
-    } else {
-        document.getElementById('navbar').classList.remove("nav-painted");
-
-    }
-}
-
-function setTheme(dark) {
-    theme = dark;
-    el = document.body;
-    if (dark) {
-        el.classList.remove('light-theme');
-        el.classList.add('dark-theme');
-    } else {
-        el.classList.add('light-theme');
-        el.classList.remove('dark-theme');
-    }
-}
-
-function openSkill(id) {
-    document.getElementById('click-me').classList.add('hide-op');
-    el = document.getElementById(id);
-    if (el.style.height == '0px') {
-        el.style.height = el.scrollHeight + 'px';
-    } else {
-        el.style.height = '0px';
-    }
-}
-
 function setTheme(dark) {
     theme = dark;
     setThemeCookie(dark);
@@ -75,13 +43,24 @@ function setTheme(dark) {
         'background-position-x': '10%',
     }, 10000, 'linear');
 }
-var project_index = 0;
-var project_item_width = 0;
-var p_style = {
-    m_padding: 20,
-    padding: 80,
-    marging: 20,
-};
+function changeNav(pos) {
+    if (pos > 0) {
+        document.getElementById('navbar').classList.add("nav-painted");
+    } else {
+        document.getElementById('navbar').classList.remove("nav-painted");
+
+    }
+}
+
+function openSkill(id) {
+    document.getElementById('click-me').classList.add('hide-op');
+    el = document.getElementById(id);
+    if (el.style.height == '0px') {
+        el.style.height = el.scrollHeight + 'px';
+    } else {
+        el.style.height = '0px';
+    }
+}
 
 function resizeProjectItem() {
     project_item_width = window.innerWidth - 200;
@@ -114,14 +93,14 @@ function clickHendler(e) {
     el = document.getElementById("b_menu");
     ch = document.getElementById("b_menu_button");
     lb = document.getElementById("b_menu_button_label");
-    
+
     if (ch.checked && -1 != e.pointerId && !e.composedPath().includes(el) && !e.composedPath().includes(lb) && !e.composedPath().includes(ch)) {
         ch.checked = false;
     }
 }
-
+var project_index = 0;
+var project_item_width = 0;
 var headerOffset = 70;
-
 var theme = getTheme();
 
 document.addEventListener('DOMContentLoaded', function() {
