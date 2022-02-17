@@ -36,6 +36,8 @@
         </div>
         <div class="nav-login">
             <button id="switch-theme">
+                <!-- некоторые svg пришлось оставить в html, потому что я меню стили path и g в них
+                (не кидайте тапки я не нашел, как сделать грамотно) -->
                 <svg version="1.1" id="switch-theme-svg" xmlns="http://www.w3.org/2000/svg"
                      viewBox="0 0 485.213 485.212" xml:space="preserve">
                     <g>
@@ -104,7 +106,10 @@
                 <g>
                     <title>L1</title>
                     <path id="svg_7"
-                          d="m43.75213,59.29205l-43.75213,-59.29205l28.81423,0l43.75213,59.29205l-43.75213,59.292l-28.81423,0l43.75213,-59.292z"
+                          d="m43.75213,59.29205l-43.75213,
+                          -59.29205l28.81423,0l43.75213,
+                          59.29205l-43.75213,59.292l-28.81423,
+                          0l43.75213,-59.292z"
                           fill="#fff"/>
                 </g>
                 <g id="cmd-l2">
@@ -127,7 +132,9 @@
                     14 лет. В 9 - 10 классе закончил <a href="">Яндекс Лицей</a>, нельзя сказать, что хорошо, но как я
                     сказал - я ленивый. Однако, стоит найти мне интересное дело, то меня не оторвать.
                 </p>
-                <p>Если интересно "что это за?", загляни в мои соц-сети (правда там пусто).</p>
+                <p>
+                    Если интересно "что это за?", загляни в мои соц-сети (правда там пусто).
+                </p>
             </div>
             <div class="self-img">
                 <img alt="avatar" src="static/img/avatar.png">
@@ -154,7 +161,7 @@
                     </div>
                     <div class="skill-item">
                         <a class="skill-title" onclick="openSkill('skill-python')">Python</a>
-                        <ul style="height: 0" id="skill-python">
+                        <ul id="skill-python">
                             <li><a>DJANGO</a></li>
                             <li><a>FLASK</a></li>
                             <li><a>SQLALCHEMY</a></li>
@@ -164,7 +171,7 @@
                     </div>
                     <div class="skill-item">
                         <a class="skill-title" onclick="openSkill('skill-web')">Web</a>
-                        <ul style="height: 0" id="skill-web">
+                        <ul id="skill-web">
                             <li><a>HTTP / HTTPS</a></li>
                             <li><a>APACHE</a></li>
                             <li><a>HTML</a></li>
@@ -175,7 +182,7 @@
                     </div>
                     <div class="skill-item">
                         <a class="skill-title" onclick="openSkill('skill-beginner')">Beginner's skills</a>
-                        <ul style="height: 0" id="skill-beginner">
+                        <ul id="skill-beginner">
                             <li><a>C++ / C</a></li>
                             <li><a>GOLANG</a></li>
                             <li><a>PY NATASHA</a></li>
@@ -185,7 +192,7 @@
                     </div>
                     <div class="skill-item">
                         <a class="skill-title" onclick="openSkill('skill-other')">Other</a>
-                        <ul style="height: 0" id="skill-other">
+                        <ul id="skill-other">
                             <li><a>SQL</a></li>
                             <li><a>MYSQL server</a></li>
                             <li><a>GIT</a></li>
