@@ -46,8 +46,10 @@ function setTheme(dark) {
 function changeNav(pos) {
     if (pos > 0) {
         document.getElementById('navbar').classList.add("nav-painted");
+        document.getElementById('mobile-head').classList.remove("hide-op");
     } else {
         document.getElementById('navbar').classList.remove("nav-painted");
+        document.getElementById('mobile-head').classList.add("hide-op");
 
     }
 }
