@@ -15,7 +15,7 @@
     --bmenu-background: #ffffffcc;
 }
 
-.dark-theme {
+.dark-theme { 
     color: white;
     --def-bfill: white;
     --fill: #fff;
@@ -75,6 +75,7 @@ a {
     }
 
     #cover .label {
+        font-size: 55px!important;
     }
 
     #cover {

@@ -54,7 +54,7 @@ function changeNav(pos) {
 function openSkill(id) {
     document.getElementById('click-me').classList.add('hide-op');
     el = document.getElementById(id);
-    if (el.style.height == '0px') {
+    if (el.style.height == '0px' || el.style.height == '') {
         el.style.height = el.scrollHeight + 'px';
     } else {
         el.style.height = '0px';
